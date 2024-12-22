@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Манай Машины Худалдааны Веб Хуудас</title>
+    <title>Манай Машин Худалдааны вэб Хуудас</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             font-family: 'Arial', sans-serif;
         }
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('ТАНЫ_МАШИНЫ_ЗУРАГНЫ_ХОЛБООС');
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Toronto.webp');
             background-size: cover;
             background-position: center;
             color: white;
@@ -44,14 +44,14 @@
 </head>
 <body>
 
-<!-- Нүүр Хуудас Хэсэг -->
+
 <section class="hero">
     <h1>Манай Машины Худалдаанд Тавтай Морилно Уу</h1>
     <p>Таны сонголт бидний тэргүүн зорилт</p>
     <a href="#машинууд" class="btn btn-primary">Манай Машинууд</a>
 </section>
 
-<!-- Машинууд Хэсэг -->
+
 <section id="машинууд" class="services container">
     <div class="row text-center">
         <h2>Манай Машинууд</h2>
@@ -91,7 +91,7 @@
     </div>
 </section>
 
-<!-- Машины Дэлгэрэнгүй Modal -->
+
 <div class="modal fade" id="carModal1" tabindex="-1" aria-labelledby="carModal1Label" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -173,20 +173,20 @@
     </div>
 </div>
 
-<!-- Хөл Хэсэг -->
+
 <footer class="footer">
     <p>&copy; 2024 Танай Машины Худалдаа. Бүх Эрх Хуулиар Хамгаалагдсан.</p>
 </footer>
 
-<!-- JavaScript to handle confirmation message -->
+
 <script>
     document.getElementById('submitOrderBtn').addEventListener('click', function() {
         var phone = document.getElementById('phone').value;
         if (phone) {
             alert('Захиалга амжилттай! Таны утасны дугаар: ' + phone);
-            // Form reset
+            
             document.getElementById('orderForm').reset();
-            // Close the modal after submission
+            
             var orderModal = bootstrap.Modal.getInstance(document.getElementById('orderModal'));
             orderModal.hide();
         } else {
